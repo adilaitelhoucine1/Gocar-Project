@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<style>
+    #fname , #lname {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 20px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .form {
+        z-index: 89999;
+      border-radius: 5px;
+      padding: 20px;
+      height: 400px;
+      width: 400px;
+      margin: auto;
+      
+    }
+    .contact-title{
+        color: RoyalBlue;
+        text-align: center;
+    }
+ h1 {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+h1 span {
+  color: #a3ddcb;
+}
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.videocar video {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.4;
+}
+textarea {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+textarea {
+  padding: 10px;
+  width: 95%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+.firstname , .lastname{
+    color: #fff;
+  font-family: "Playfair Display", serif;
+}
+</style>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html"> <img src="images/logo.svg" alt="gocar logo" /></a>    
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="advantages.html">advantages</a></li>
+      <li><a href="card.html">view card</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="propos.html">about us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      
+    </ul>
+   </nav>
+  </header>
+    <div class="videocar">
+        <video
+          src="images/videocar.mp4"
+          type="video/mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+    <section class="map">
+        <h2 style="margin-top: 50px;">Contact <span>Us</span></h2>
+        
+    <div class="form">
+        
+        <form>
+          <label for="fname" class="firstname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname" class="lastname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          
+          <textarea
+          rows="6"
+          name="message"
+          id="message"  placeholder="Write your message..."  class="formbold-form-input"
+      ></textarea>
+        
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      </section>
+</body>
+</html>
