@@ -654,7 +654,28 @@ header nav .showClose {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+.header .navbar li a{
+font-size: 80%;
 }
+.header .navbar img {
+  width: 120px;
+  /*ajout pour image appraitre bien*/
+  margin-top: 10px;
+  
+}
+.header .navbar ul li {
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1;
+  color: whitesmoke;
+}
+section.about div img {
+  width: 66%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+    }
 
 /*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
 @media only screen and (min-width: 599px) and (max-width: 767px) {
@@ -665,9 +686,7 @@ header nav .showClose {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .header .navbar > ul {
-    display: none;
-  }
+ 
   header nav .ham {
     right: 60px;
     display: block;
@@ -689,6 +708,37 @@ header nav .showClose {
   .gallery-container :nth-child(2) {
     grid-column: unset;
     grid-row: unset;
+  }
+  .header .navbar li a{
+font-size: 80%;
+}
+.header .navbar img {
+  width: 120px;
+  /*ajout pour image appraitre bien*/
+  margin-top: 10px;
+  
+}
+.header .navbar ul li {
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1;
+  color: whitesmoke;
+}
+
+.header .navbar li a{
+  font-size: 10px;
+  }
+  .header .navbar img {
+    width: 70px;
+    /*ajout pour image appraitre bien*/
+    margin-top: 10px;
+    
+  }
+  section.about div img {
+    width: 54%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -788,6 +838,22 @@ header nav .showClose {
   footer p {
     padding-top: 30px;
   }
+  section.hero .content h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    margin-bottom: 10px;  
+  }
+  section.hero .content img {
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    margin-bottom: 10px;   
+  }
+  .header .navbar img {
+    width: 80px;
+    /*ajout pour image appraitre bien*/
+    margin-left:85px;
+  }
+  /*the responsivity in this cas it s not donee yet*/
 }
 
 @media (max-width: 575px) {
